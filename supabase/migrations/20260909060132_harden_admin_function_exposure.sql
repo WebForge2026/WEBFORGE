@@ -1,0 +1,10 @@
+DROP FUNCTION IF EXISTS public.is_admin();
+CREATE SCHEMA IF NOT EXISTS private;
+CREATE OR REPLACE FUNCTION private.is_admin() RETURNS boolean LANGUAGE sql STABLE SECURITY DEFINER SET search_path = public AS $$ SELECT EXISTS (SELECT 1 FROM public.admin_users WHERE user_id = auth.uid() AND role = 'admin'); $$;
+REVOKE ALL ON FUNCTION private.is_admin() FROM PUBLIC;
+GRANT EXECUTE ON FUNCTION private.is_admin() TO authenticated;
+REVOKE ALL ON public.admin_users FROM anon, authenticated;
+DROP POLICY IF EXISTS "admin_select_quotes" ON public.quotes;
+CREATE POLICY "admin_select_quotes" ON public.quotes FOR SELECT TO authenticated USING (private.is_admin() AND archived_at IS NULL);
+DROP POLICY IF EXISTS "admin_update_quotes" ON public.quotes;
+CREATE POLICY "admin_update_quotes" ON public.quotes FOR UPDATE TO authenticated USING (private.is_admin()) WITH CHECK (private.is_admin() AND status IN ('new', 'contacted', 'won', 'lost'));
