@@ -13,9 +13,10 @@ export function Footer() {
 
   const navLinks = [
     { label: t.nav.services, href: '#services' },
+    { label: t.nav.process, href: '#process' },
     { label: t.nav.work, href: '#portfolio' },
+    { label: t.nav.industries, href: '#industries' },
     { label: t.nav.estimator, href: '#estimator' },
-    { label: t.nav.founders, href: '#founders' },
     { label: t.nav.contact, href: '#contact' },
   ];
 

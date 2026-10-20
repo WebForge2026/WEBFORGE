@@ -95,14 +95,12 @@ function DeviceMockup() {
   const [activeStat, setActiveStat] = useState(0);
   const [codeLine, setCodeLine] = useState(0);
 
-  const codeLines = [
-    '> forge create --project webforge',
-    '> Installing dependencies...',
-    '> Setting up Stripe payments...',
-    '> Configuring email automation...',
-    '> Building UI components...',
-    '> Deploying to production...',
-    '> Site live at web-forge.dev',
+  const bookingMessages = [
+    'New booking — Restaurant table for 4',
+    'Appointment booked — Fade cut at 15:00',
+    'Trial session requested — Fitness studio',
+    'Quote request — Local plumber service',
+    'New reservation — Tonight at 20:30',
   ];
 
   useEffect(() => {
@@ -114,10 +112,10 @@ function DeviceMockup() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCodeLine((prev) => (prev + 1) % codeLines.length);
-    }, 1800);
+      setCodeLine((prev) => (prev + 1) % bookingMessages.length);
+    }, 2200);
     return () => clearInterval(interval);
-  }, [codeLines.length]);
+  }, [bookingMessages.length]);
 
   const handleMouseMove = (e: React.MouseEvent) => {
     const el = ref.current;
@@ -131,8 +129,8 @@ function DeviceMockup() {
   const handleMouseLeave = () => setTilt({ x: 0, y: 0 });
 
   const stats = [
-    { label: t.dashboard.revenue, value: '€128,420', change: '+310%', color: 'text-emerald-400' },
-    { label: t.dashboard.visitors, value: '84,201', change: '+182%', color: 'text-cyan-400' },
+    { label: t.dashboard.visitors, value: '4,201', change: '+182%', color: 'text-cyan-400' },
+    { label: t.dashboard.revenue, value: '€12,420', change: '+310%', color: 'text-emerald-400' },
     { label: t.dashboard.conversion, value: '8.7%', change: '+4.2%', color: 'text-emerald-400' },
   ];
 
@@ -207,7 +205,7 @@ function DeviceMockup() {
 
             <div className="p-3 rounded-xl bg-obsidian-100 border border-white/5 font-mono text-xs">
               <p className="text-emerald-400">
-                {codeLines[codeLine]}
+                {bookingMessages[codeLine]}
                 <span className="inline-block w-2 h-3 bg-emerald-400 ml-1 animate-pulse" />
               </p>
             </div>

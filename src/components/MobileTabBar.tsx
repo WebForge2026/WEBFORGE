@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Layers, Briefcase, Calculator, Users, Mail } from 'lucide-react';
+import { Layers, Briefcase, Calculator, UtensilsCrossed, Mail } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 
 export function MobileTabBar() {
@@ -15,8 +15,8 @@ export function MobileTabBar() {
   const tabs = [
     { label: t.nav.services, href: '#services', icon: <Layers className="w-5 h-5" /> },
     { label: t.nav.work, href: '#portfolio', icon: <Briefcase className="w-5 h-5" /> },
+    { label: t.nav.industries, href: '#industries', icon: <UtensilsCrossed className="w-5 h-5" /> },
     { label: t.nav.estimator, href: '#estimator', icon: <Calculator className="w-5 h-5" /> },
-    { label: t.nav.founders, href: '#founders', icon: <Users className="w-5 h-5" /> },
     { label: t.nav.contact, href: '#contact', icon: <Mail className="w-5 h-5" /> },
   ];
 
