@@ -44,7 +44,7 @@ export function AdminLogin() {
               <Hammer className="w-6 h-6 text-obsidian" strokeWidth={2.5} />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-white">WebForge</h1>
+              <h1 className="text-xl font-bold text-white">WebXelon</h1>
               <p className="text-white/40 text-xs">{t.admin.loginTitle}</p>
             </div>
           </div>

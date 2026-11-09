@@ -250,3 +250,71 @@
 .opacity-0-init {
   opacity: 0;
 }
+
+.animate-particle {
+  animation: particleDrift 7s ease-in-out infinite;
+}
+
+@keyframes particleDrift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.35; }
+  50% { transform: translate3d(12px, -18px, 0) scale(1.35); opacity: 1; }
+}
+
+@keyframes introWarpLine {
+  0% { width: 0; opacity: 0; }
+  20% { opacity: 1; }
+  100% { width: var(--warp-len, 400px); opacity: 0; }
+}
+
+/* === Planet system === */
+
+.planet-wrapper {
+  position: relative;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.planet-globe {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: planetRotate linear infinite;
+  will-change: transform;
+}
+
+@keyframes planetRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Texture scrolling — moves the CSS background-position to simulate rotation */
+@keyframes planetScroll {
+  from { background-position: 0% 50%; }
+  to { background-position: -200% 50%; }
+}
+
+@keyframes planetSunCorona {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.08); opacity: 0.9; }
+}
+
+@keyframes planetSunPulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes planetSunFlare {
+  0%, 100% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.3); opacity: 0.9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}

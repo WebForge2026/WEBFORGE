@@ -37,7 +37,7 @@ export function Footer() {
                   <Hammer className="w-5 h-5 text-obsidian" strokeWidth={2.5} />
                 </div>
                 <span className="text-xl font-bold text-white">
-                  Web<span className="gradient-text-static">Forge</span>
+                  Web<span className="gradient-text-static">Xelon</span>
                 </span>
               </div>
               <p className="text-white/40 text-sm leading-relaxed mb-4 max-w-xs">
@@ -118,7 +118,7 @@ export function Footer() {
 
           <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-white/30 text-xs">
-              © {new Date().getFullYear()} WebForge. {t.footer.rights}
+              © {new Date().getFullYear()} WebXelon. {t.footer.rights}
             </p>
             <p className="text-white/30 text-xs">
               {t.footer.madeWith}
@@ -183,7 +183,7 @@ function ImpressumContent({ lang }: { lang: string }) {
     return (
       <>
         <Section title="Angaben gemäß § 5 TMG">
-          <p>WebForge</p>
+          <p>WebXelon</p>
           <p>web-forge.dev</p>
         </Section>
         <Section title="Vertreten durch die Geschäftsführung">
@@ -208,7 +208,7 @@ function ImpressumContent({ lang }: { lang: string }) {
     return (
       <>
         <Section title="Данни съгласно § 5 TMG">
-          <p>WebForge</p>
+          <p>WebXelon</p>
           <p>web-forge.dev</p>
         </Section>
         <Section title="Представено от ръководството">
@@ -228,7 +228,7 @@ function ImpressumContent({ lang }: { lang: string }) {
   return (
     <>
       <Section title="Information according to § 5 TMG">
-        <p>WebForge</p>
+        <p>WebXelon</p>
         <p>web-forge.dev</p>
       </Section>
       <Section title="Represented by the Management">
@@ -258,7 +258,7 @@ function PrivacyContent({ lang }: { lang: string }) {
         </Section>
         <Section title="2. Verantwortliche Stelle">
           <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
-          <p>WebForge</p>
+          <p>WebXelon</p>
           <p>Kontakt: kodzhebashev@web-forge.dev, shopov@web-forge.dev</p>
         </Section>
         <Section title="3. Datenerfassung auf dieser Website">
@@ -290,7 +290,7 @@ function PrivacyContent({ lang }: { lang: string }) {
         </Section>
         <Section title="2. Отговорна страна">
           <p>Отговорна за обработката на данни в този уебсайт е:</p>
-          <p>WebForge</p>
+          <p>WebXelon</p>
           <p>Контакт: kodzhebashev@web-forge.dev, shopov@web-forge.dev</p>
         </Section>
         <Section title="3. Събиране на данни">
@@ -320,7 +320,7 @@ function PrivacyContent({ lang }: { lang: string }) {
       </Section>
       <Section title="2. Responsible Party">
         <p>Responsible for data processing on this website:</p>
-        <p>WebForge</p>
+        <p>WebXelon</p>
         <p>Contact: kodzhebashev@web-forge.dev, shopov@web-forge.dev</p>
       </Section>
       <Section title="3. Data Collection on this Website">
@@ -350,10 +350,10 @@ function TermsContent({ lang }: { lang: string }) {
     return (
       <>
         <Section title="§ 1 Geltungsbereich">
-          <p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen WebForge und dem Kunden über die Erbringung von Dienstleistungen, insbesondere Webentwicklung, Automatisierungen, Payment-Setups und UI/UX-Design.</p>
+          <p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen WebXelon und dem Kunden über die Erbringung von Dienstleistungen, insbesondere Webentwicklung, Automatisierungen, Payment-Setups und UI/UX-Design.</p>
         </Section>
         <Section title="§ 2 Leistungsbeschreibung">
-          <p>WebForge erbringt Dienstleistungen in den Bereichen:</p>
+          <p>WebXelon erbringt Dienstleistungen in den Bereichen:</p>
           <p>• Webentwicklung & E-Commerce</p>
           <p>• Online-Zahlungssysteme (Stripe, PayPal)</p>
           <p>• E-Mail-Automatisierung & CRM-Integration</p>
@@ -361,13 +361,13 @@ function TermsContent({ lang }: { lang: string }) {
           <p>• UI/UX-Design & Micro-Animationen</p>
         </Section>
         <Section title="§ 3 Mitwirkungspflichten des Kunden">
-          <p>Der Kunde stellt WebForge alle für die Durchführung des Auftrags benötigten Informationen und Materialien rechtzeitig und in geeigneter Form zur Verfügung.</p>
+          <p>Der Kunde stellt WebXelon alle für die Durchführung des Auftrags benötigten Informationen und Materialien rechtzeitig und in geeigneter Form zur Verfügung.</p>
         </Section>
         <Section title="§ 4 Abnahme">
-          <p>Nach Fertigstellung der Leistung wird WebForge den Kunden zur Abnahme auffordern. Die Abnahme gilt als erfolgt, wenn der Kunde nicht innerhalb von 14 Tagen schriftlich konkrete Mängel rügt.</p>
+          <p>Nach Fertigstellung der Leistung wird WebXelon den Kunden zur Abnahme auffordern. Die Abnahme gilt als erfolgt, wenn der Kunde nicht innerhalb von 14 Tagen schriftlich konkrete Mängel rügt.</p>
         </Section>
         <Section title="§ 5 Gewährleistung & Haftung">
-          <p>WebForge gewährleistet die vertragsgemäße Erbringung der Leistung. Die Haftung ist auf Vorsatz und grobe Fahrlässigkeit beschränkt. Für leichte Fahrlässigkeit haftet WebForge nur bei Verletzung wesentlicher Vertragspflichten.</p>
+          <p>WebXelon gewährleistet die vertragsgemäße Erbringung der Leistung. Die Haftung ist auf Vorsatz und grobe Fahrlässigkeit beschränkt. Für leichte Fahrlässigkeit haftet WebXelon nur bei Verletzung wesentlicher Vertragspflichten.</p>
         </Section>
         <Section title="§ 6 Urheberrecht">
           <p>Nach vollständiger Zahlung des vereinbarten Honorars gehen die Nutzungsrechte an den erstellten Werken auf den Kunden über, soweit nichts anderes vereinbart wurde.</p>
@@ -379,7 +379,7 @@ function TermsContent({ lang }: { lang: string }) {
     return (
       <>
         <Section title="§ 1 Обхват">
-          <p>Тези общи условия се прилагат за всички договори между WebForge и клиента за предоставяне на услуги, по-специално уеб разработка, автоматизации, настройки на плащания и UI/UX дизайн.</p>
+          <p>Тези общи условия се прилагат за всички договори между WebXelon и клиента за предоставяне на услуги, по-специално уеб разработка, автоматизации, настройки на плащания и UI/UX дизайн.</p>
         </Section>
         <Section title="§ 2 Описание на услугите">
           <p>• Уеб разработка & Е-Комерс</p>
@@ -389,13 +389,13 @@ function TermsContent({ lang }: { lang: string }) {
           <p>• UI/UX дизайн & Микро-анимации</p>
         </Section>
         <Section title="§ 3 Задължения на клиента">
-          <p>Клиентът предоставя на WebForge своевременно цялата информация и материали, необходими за изпълнението на поръчката.</p>
+          <p>Клиентът предоставя на WebXelon своевременно цялата информация и материали, необходими за изпълнението на поръчката.</p>
         </Section>
         <Section title="§ 4 Приемане">
-          <p>След завършване на услугата WebForge ще поиска приемане от клиента. Приемането се счита за извършена, ако клиентът не посочи конкретни дефекти в 14-дневен срок.</p>
+          <p>След завършване на услугата WebXelon ще поиска приемане от клиента. Приемането се счита за извършена, ако клиентът не посочи конкретни дефекти в 14-дневен срок.</p>
         </Section>
         <Section title="§ 5 Гаранция & Отговорност">
-          <p>WebForge гарантира договорно предоставяне на услугата. Отговорността е ограничена до умисъл и груба небрежност.</p>
+          <p>WebXelon гарантира договорно предоставяне на услугата. Отговорността е ограничена до умисъл и груба небрежност.</p>
         </Section>
         <Section title="§ 6 Авторски права">
           <p>След пълно плащане на договореното възнаграждение правата за използване на създадените произведения се прехвърлят на клиента.</p>
@@ -406,10 +406,10 @@ function TermsContent({ lang }: { lang: string }) {
   return (
     <>
       <Section title="§ 1 Scope">
-        <p>These General Terms and Conditions apply to all contracts between WebForge and the client regarding the provision of services, in particular web development, automations, payment setups, and UI/UX design.</p>
+        <p>These General Terms and Conditions apply to all contracts between WebXelon and the client regarding the provision of services, in particular web development, automations, payment setups, and UI/UX design.</p>
       </Section>
       <Section title="§ 2 Service Description">
-        <p>WebForge provides services in the following areas:</p>
+        <p>WebXelon provides services in the following areas:</p>
         <p>• Web Development & E-Commerce</p>
         <p>• Online Payment Systems (Stripe, PayPal)</p>
         <p>• Email Automation & CRM Integration</p>
@@ -417,13 +417,13 @@ function TermsContent({ lang }: { lang: string }) {
         <p>• UI/UX Design & Micro-Animations</p>
       </Section>
       <Section title="§ 3 Client Cooperation Duties">
-        <p>The client shall provide WebForge with all information and materials required for the execution of the order in a timely manner and in suitable form.</p>
+        <p>The client shall provide WebXelon with all information and materials required for the execution of the order in a timely manner and in suitable form.</p>
       </Section>
       <Section title="§ 4 Acceptance">
-        <p>Upon completion of the service, WebForge will request acceptance from the client. Acceptance is deemed to have occurred if the client does not raise specific defects in writing within 14 days.</p>
+        <p>Upon completion of the service, WebXelon will request acceptance from the client. Acceptance is deemed to have occurred if the client does not raise specific defects in writing within 14 days.</p>
       </Section>
       <Section title="§ 5 Warranty & Liability">
-        <p>WebForge warrants the contractual provision of the service. Liability is limited to intent and gross negligence. For slight negligence, WebForge is only liable in the event of a breach of essential contractual obligations.</p>
+        <p>WebXelon warrants the contractual provision of the service. Liability is limited to intent and gross negligence. For slight negligence, WebXelon is only liable in the event of a breach of essential contractual obligations.</p>
       </Section>
       <Section title="§ 6 Copyright">
         <p>Upon full payment of the agreed fee, the rights of use of the created works are transferred to the client, unless otherwise agreed.</p>

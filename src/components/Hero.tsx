@@ -15,7 +15,12 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 pb-8 sm:pt-32 sm:pb-20 lg:pt-24 overflow-hidden max-w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <div className="absolute left-[8%] top-[18%] h-2 w-2 rounded-full bg-emerald-300 animate-particle" />
+        <div className="absolute right-[14%] top-[28%] h-1.5 w-1.5 rounded-full bg-cyan-300 animate-particle" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute left-[46%] bottom-[18%] h-1.5 w-1.5 rounded-full bg-emerald-400 animate-particle" style={{ animationDelay: '3s' }} />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center">
           <div className="text-center lg:text-left z-10">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full glass-panel mb-4 sm:mb-6 animate-fade-in-up">

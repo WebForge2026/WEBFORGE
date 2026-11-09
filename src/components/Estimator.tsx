@@ -164,7 +164,7 @@ export function Estimator() {
         <Reveal className="text-center mb-6 sm:mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel mb-3 sm:mb-4">
             <Sparkles className="w-4 h-4 text-emerald-400" />
-            <span className="text-xs sm:text-sm text-white/70 font-medium">WebForge Estimator</span>
+            <span className="text-xs sm:text-sm text-white/70 font-medium">WebXelon Estimator</span>
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
             {t.estimator.title}

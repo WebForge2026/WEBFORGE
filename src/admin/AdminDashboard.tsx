@@ -116,7 +116,7 @@ export function AdminDashboard() {
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center">
               <Hammer className="w-5 h-5 text-obsidian" strokeWidth={2.5} />
             </div>
-            <span className="text-lg font-bold text-white">WebForge <span className="text-white/30 font-normal">Admin</span></span>
+            <span className="text-lg font-bold text-white">WebXelon <span className="text-white/30 font-normal">Admin</span></span>
           </div>
 
           <div className="flex items-center gap-3">

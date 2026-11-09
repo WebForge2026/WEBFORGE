@@ -12,7 +12,15 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 40);
+        ticking = false;
+      });
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -55,7 +63,7 @@ export function Navbar() {
               <div className="absolute inset-0 rounded-xl bg-emerald-400/40 blur-md -z-10 animate-glow-pulse" />
             </div>
             <span className="text-xl font-bold tracking-tight text-white">
-              Web<span className="gradient-text-static">Forge</span>
+              Web<span className="gradient-text-static">Xelon</span>
             </span>
           </a>
 
