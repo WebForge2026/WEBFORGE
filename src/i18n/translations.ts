@@ -430,7 +430,7 @@ const translations: Record<Language, Translation> = {
       viewProject: 'Projekt ansehen',
     },
     founders: {
-      title: 'Das Team hinter WebForge',
+      title: 'Das Team hinter WebXelon',
       subtitle: 'Wir bauen Websites, die Ihr Geschäft nach vorn bringen.',
       angelName: 'Angel Kodzhebashev',
       angelRole: 'Sales Manager',
@@ -518,7 +518,7 @@ const translations: Record<Language, Translation> = {
       privacy: 'Datenschutz',
       terms: 'AGB',
       rights: 'Alle Rechte vorbehalten.',
-      madeWith: 'Mit Sorgfalt gefertigt von WebForge',
+      madeWith: 'Mit Sorgfalt gefertigt von WebXelon',
     },
     legal: {
       impressumTitle: 'Impressum',
@@ -727,7 +727,7 @@ const translations: Record<Language, Translation> = {
       viewProject: 'View Project',
     },
     founders: {
-      title: 'The Team Behind WebForge',
+      title: 'The Team Behind WebXelon',
       subtitle: 'We build websites that move your business forward.',
       angelName: 'Angel Kodzhebashev',
       angelRole: 'Sales Manager',
@@ -815,7 +815,7 @@ const translations: Record<Language, Translation> = {
       privacy: 'Privacy Policy',
       terms: 'Terms & Conditions',
       rights: 'All rights reserved.',
-      madeWith: 'Crafted with care by WebForge',
+      madeWith: 'Crafted with care by WebXelon',
     },
     legal: {
       impressumTitle: 'Impressum — Legal Notice',
@@ -1024,7 +1024,7 @@ const translations: Record<Language, Translation> = {
       viewProject: 'Виж проект',
     },
     founders: {
-      title: 'Екипът зад WebForge',
+      title: 'Екипът зад WebXelon',
       subtitle: 'Създаваме уебсайтове, които движат бизнеса ви напред.',
       angelName: 'Ангел Коджебашев',
       angelRole: 'Мениджър Продажби',
@@ -1112,7 +1112,7 @@ const translations: Record<Language, Translation> = {
       privacy: 'Защита на данните',
       terms: 'Общи условия',
       rights: 'Всички права запазени.',
-      madeWith: 'Изработено с грижа от WebForge',
+      madeWith: 'Изработено с грижа от WebXelon',
     },
     legal: {
       impressumTitle: 'Импресум — Правно уведомление',
